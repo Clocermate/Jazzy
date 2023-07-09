@@ -36,11 +36,6 @@ body {
     line-height: 1.5;
   }
   
-  /* Section styles */
-  section {
-    margin-bottom: 40px;
-  }
-  
   /* Emoji styles */
   .emoji {
     font-size: 20px;
@@ -75,4 +70,3 @@ body {
       font-size: 14px;
     }
   }
-  
