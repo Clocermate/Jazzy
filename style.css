@@ -60,19 +60,22 @@
 #home{
     display: flex;
     flex-direction: column;
-    padding: 3px 200px;
-    height: 1000px;
+    padding:3px 200px;
+    height: 550px;
     justify-content: center;
     align-items: center;
 }
-#home::before{
+
+#home::before{ 
     content: "";
-    background: url('./bg2.jpg') no-repeat center center/cover;
     position: absolute;
-    height: 100%;
+    background: url('./bg2.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
     width: 100%;
     z-index: -1;
-    opacity: 0.89;
+    opacity:0.89;
 }
 #home h1{
     color: white;
@@ -124,7 +127,31 @@
     font-family: 'Bree Serif', serif;
 }
 #services .box img{
-    height: 160px;
+    height: 200px;
     display: block;
     margin: auto;
+}
+#client-section{
+    height: 344px;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(./bg1.png);
+    width: 100%;
+    height: 80%;
+    z-index:-1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 90px;
+}
+.client-item{
+    padding: 34px;
 }
