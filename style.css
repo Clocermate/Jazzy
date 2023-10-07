@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo{
+    margin: 15px 33px;
+    height:62px;
+    border-radius: 50%;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+     color: white;
+    list-style: none;
+    font-size: 1.1rem
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 23px ;
+    border-radius:20px ;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+color: black;
+background-color: white;
+}
