@@ -1,15 +1,18 @@
-*{
+/* Resetting default margin and padding for all elements */
+* {
     margin: 0;
     padding: 0;
-  
 }
 
-#navbar{
+/* Styling the navbar container */
+#navbar {
     display: flex;
     align-items: center;
     position: relative;
 }
-#navbar::before{
+
+/* Adding a semi-transparent black background to the navbar */
+#navbar::before {
     content: "";
     background-color: black;
     position: absolute;
@@ -18,27 +21,37 @@
     z-index: -1;
     opacity: 0.4;
 }
-#logo{
+
+/* Styling the logo within the navbar */
+#logo {
     margin: 15px 33px;
-    height:62px;
+    height: 62px;
     border-radius: 50%;
 }
-#navbar ul{
+
+/* Styling the unordered list within the navbar */
+#navbar ul {
     display: flex;
 }
-#navbar ul li{
-     color: white;
+
+/* Styling list items within the navbar */
+#navbar ul li {
+    color: white;
     list-style: none;
-    font-size: 1.1rem
+    font-size: 1.1rem;
 }
-#navbar ul li a{
+
+/* Styling links within list items */
+#navbar ul li a {
     display: block;
-    padding: 3px 23px ;
-    border-radius:20px ;
+    padding: 3px 23px;
+    border-radius: 20px;
     text-decoration: none;
     color: white;
 }
-#navbar ul li a:hover{
-color: black;
-background-color: white;
+
+/* Styling links within list items on hover */
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
 }
